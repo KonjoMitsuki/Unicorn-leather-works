@@ -84,6 +84,8 @@ main {
 }
 
 .info {
+  display: flex;
+  justify-content: space-between;
   margin-top: 30px;
   font-size: 18px;
   line-height: 1.8;
