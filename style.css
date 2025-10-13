@@ -5,7 +5,7 @@ body {
     color: #333;
     background-color: #f9f9f9;
     /* ページ全体の背景画像を常に表示 */
-    background-image: url('Assets/無題17_20251013202638.png');
+    background-image: url('Assets/unicorn-icon2.png');
     background-repeat: no-repeat;
     background-position: center top; /* 位置は調整可能 */
     background-attachment: fixed; /* スクロールしても背景は固定 */
