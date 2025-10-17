@@ -186,3 +186,37 @@ footer {
     background-color: #fff;
     border-top: 1px solid #eee;
 }
+
+/* スマートフォン向けのレスポンシブ対応 */
+@media screen and (max-width: 768px) {
+    /* ヘッダーの調整 */
+    .logo h1 {
+        font-size: 18px;
+    }
+
+    /* ナビゲーションの調整 */
+    nav ul {
+        gap: 20px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    /* 商品リストの調整 */
+    .product-item {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    /* 背景画像の調整 */
+    body {
+        background-size: contain;
+        background-position: center 50px;
+    }
+
+    /* Informationセクションの調整 */
+    .info-content {
+        padding: 0 15px;
+    }
+}
