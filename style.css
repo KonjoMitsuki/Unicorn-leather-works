@@ -7,9 +7,12 @@ body {
     /* ページ全体の背景画像を常に表示 */
     background-image: url('Assets/unicorn-icon2.png');
     background-repeat: no-repeat;
-    background-position: center top; /* 位置は調整可能 */
-    background-attachment: fixed; /* スクロールしても背景は固定 */
-    background-size: 100% auto; /* 横幅に合わせて表示（縦は自動） */
+    background-position: center top;
+    background-attachment: fixed;
+    /* background-size: 100% auto; を以下に変更 */
+    background-size: cover;
+    /* 背景色を追加して画像が読み込まれるまでの表示を改善 */
+    background-color: #f9f9f9;
 }
 
 /* ヘッダー */
