@@ -183,6 +183,33 @@ nav a:hover {
     line-height: 1.8;
 }
 
+/* 追加情報のスタイル */
+.additional-info {
+    display: flex;
+    flex-wrap: wrap; /* 画面が狭くなったら折り返す */
+    justify-content: center; /* 中央揃え */
+    gap: 20px; /* アイテム間のスペース */
+    margin-top: 20px; /* 上部の余白 */
+}
+
+.info-item {
+    flex: 1 1 200px; /* 最小200px、最大で均等に広がる */
+    background-color: #f0f0f0; /* 背景色 */
+    padding: 15px;
+    border-radius: 5px; /* 角を丸く */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 影を追加 */
+}
+
+.info-item h3 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+}
+
+.info-item p {
+    margin: 0;
+    font-size: 14px;
+}
+
 /* フッター */
 footer {
     text-align: center;
