@@ -243,7 +243,7 @@ footer {
     }
 
     /* 背景画像の調整 */
-    body {
+    body::before {
         background-size: contain;
         background-position: center 50px;
     }
