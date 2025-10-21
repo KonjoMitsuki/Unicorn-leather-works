@@ -210,6 +210,16 @@ nav a:hover {
     font-size: 14px;
 }
 
+/* マップナビゲーション画像 */
+.map-navi {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 5px; /* 角を丸く */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 軽い影を追加 */
+}
+
 /* フッター */
 footer {
     text-align: center;
