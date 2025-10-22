@@ -63,7 +63,7 @@ header {
 /* メインビジュアル */
 .hero {
     width: 100%;
-    height: 300px;
+    height: 300px; /* デスクトップ向けのデフォルト高さ */
     background-color: #e9e9e9; /* 写真が入るまでの仮の背景色 */
     box-sizing: border-box; /* 枠線がサイズに含まれるようにする */
     display: flex;
@@ -71,8 +71,24 @@ header {
     align-items: center;
     font-size: 32px;
     color: #888;
+    overflow: hidden; /* 中の画像がはみ出さないようにする */
 }
 
+/* .hero 内に img を直接置く場合のレスポンシブ設定 */
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 中央を優先してトリミング */
+    object-position: center center;
+    display: absolute;
+}
+
+/* モバイルでは高さをビューポートに対する比率で指定 */
+@media screen and (max-width: 768px) {
+    .hero {
+        height: 40vh; /* 画面高さの 40% */
+    }
+}
 /* ナビゲーション */
 nav {
     padding: 20px 0;
