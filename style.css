@@ -89,6 +89,36 @@ header {
         height: 40vh; /* 画面高さの 40% */
     }
 }
+
+/* --- UX: スムーズスクロール --- */
+html {
+    scroll-behavior: smooth;
+}
+
+/* カラーページへのリンク見た目改善 */
+.coler-link a,
+.coler-link {
+    color: #d14; /* 目立つ暖色系 */
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.coler-link a::before,
+.coler-link::before {
+    content: "🎨"; /* 小さなアイコン */
+    display: inline-block;
+    transform: translateY(-1px);
+}
+
+.coler-link a:hover,
+.coler-link:hover {
+    text-decoration: underline;
+    color: #b00;
+}
+
 /* ナビゲーション */
 nav {
     padding: 20px 0;
@@ -129,6 +159,13 @@ nav a:hover {
     margin-bottom: 30px;
     text-decoration: underline;
     text-underline-offset: 8px; /* 見出しと下線の間隔 */
+}
+
+.attention ul {
+    text-align: left;
+    font-size: 80%;
+    padding-left: 1.1em; /* 箇条書きのインデント調整 */
+    margin: 0.5em 0;
 }
 
 /* 商品リスト */
@@ -189,6 +226,12 @@ nav a:hover {
     font-weight: bold;
     text-align: right; /* 価格は右揃えに */
     margin: 0;
+}
+
+.color-vari {
+    text-align: left;
+    font-size: 80%;
+    margin: none;
 }
 
 /* Informationセクション */
