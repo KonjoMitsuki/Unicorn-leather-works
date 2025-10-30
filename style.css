@@ -213,6 +213,10 @@ nav a:hover {
     margin: 0 0 10px 0;
     font-size: 20px;
 }
+.product-item a{
+    color:#333;
+    text-decoration-line: none;
+}
 
 .product-item .caption {
     font-size: 14px;
